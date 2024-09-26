@@ -66,9 +66,10 @@
                     aria-expanded="true" aria-controls="collapse1">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-people-fill" viewBox="0 0 16 16">
+                            class="bi bi-file-earmark-spreadsheet-fill" viewBox="0 0 16 16">
+                            <path d="M6 12v-2h3v2z" />
                             <path
-                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M3 9h10v1h-3v2h3v1h-3v2H9v-2H6v2H5v-2H3v-1h2v-2H3z" />
                         </svg>
                     </i>
                     <span>Cadastros</span>
@@ -77,19 +78,86 @@
                 <div id="collapse1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Cadastros:</h6>
-                        <a class="collapse-item" href="#"
-                            data-opcoes='[{"link": "", "texto": "Cadastros"}, {"link": "", "texto": "Eliminados"}, {"link": "", "texto": "Categorias"}, {"link": "", "texto": "Tipos"}, {"link": "", "texto": "Profissões"}]'>Clientes</a>
-                        <a class="collapse-item" href="#"
-                            data-opcoes='[{"link": "", "texto": "Condutores"}, {"link": "", "texto": "Veículos"}]'>Entregas</a>
-                        <a class="collapse-item" href="#" data-opcoes="null">Formas de Pagamento</a>
-                        <a class="collapse-item" href="#">Fornecedores</a>
-                        <a class="collapse-item" href="#">Indicações</a>
-                        <a class="collapse-item" href="#">Natureza de Operações</a>
-                        <a class="collapse-item" href="#">Ordem de Serviço</a>
-                        <a class="collapse-item" href="#">Produtos</a>
-                        <a class="collapse-item" href="#">Promoções</a>
-                        <a class="collapse-item" href="#">Transportadoras</a>
-                        <a class="collapse-item" href="#">Vendedores</a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Cadastros"},
+                            {"link": "", "texto": "Eliminados"},
+                            {"link": "", "texto": "Categorias"},
+                            {"link": "", "texto": "Tipos"},
+                            {"link": "", "texto": "Profissões"}
+                            ]'>
+                            Clientes
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Condutores"},
+                            {"link": "", "texto": "Veículos"}
+                            ]'>
+                            Entregas
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes="null">
+                            Formas de Pagamento
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Cadastros"},
+                            {"link": "", "texto": "Eliminados"},
+                            {"link": "", "texto": "Compradores"},
+                            {"link": "", "texto": "Compradores"}
+                            ]'>
+                            Fornecedores
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes="null">
+                            Indicações
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes="null">
+                            Natureza de Operações
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Atendentes", "niveis": [
+                                {"link": "", "texto": "Cadastros"},
+                                {"link": "", "texto": "Eliminados"}
+                            ]},
+                            {"link": "", "texto": "Pet Shop", "niveis": [
+                                {"link": "", "texto": "Cadastros"},
+                                {"link": "", "texto": "Eliminados"}
+                            ]},
+                            {"link": "", "texto": "Serviços", "niveis": [
+                                {"link": "", "texto": "Cadastros"},
+                                {"link": "", "texto": "Eliminados"}
+                            ]}
+                            ]'>
+                            Ordem de Serviço
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Cadastros"},
+                            {"link": "", "texto": "Complementos"},
+                            {"link": "", "texto": "Seções"},
+                            {"link": "", "texto": "Grupos"},
+                            {"link": "", "texto": "Famílias"},
+                            {"link": "", "texto": "Marcas"},
+                            {"link": "", "texto": "Unidade de Medida"},
+                            {"link": "", "texto": "Etapas de Produção"},
+                            {"link": "", "texto": "Setores de Produção"},
+                            {"link": "", "texto": "Perfis Tributários"}
+                            ]'>
+                            Produtos
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Cadastrar"},
+                            {"link": "", "texto": "Ativas"},
+                            {"link": "", "texto": "Canceladas"},
+                            {"link": "", "texto": "Futuras"},
+                            {"link": "", "texto": "Vencidas"}
+                            ]'>
+                            Promoções
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes="null">
+                            Transportadoras
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Cadastros"},
+                            {"link": "", "texto": "Eliminados"}
+                            ]'>
+                            Vendedores
+                        </a>
 
                     </div>
                 </div>
@@ -110,11 +178,170 @@
                 </a>
                 <div id="collapse2" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <h6 class="collapse-header">Movimentações:</h6>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Ajustes de Estoques"},
+                            {"link": "", "texto": "Contagem", "niveis": [
+                                {"link": "", "texto": "Lançamento"},
+                                {"link": "", "texto": "Pendentes"},
+                                {"link": "", "texto": "Processadas"}
+                            ]},
+                            {"link": "", "texto": "Atendentes"}
+                            ]'>
+                            Ajuste de Estoque
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Lançamento Por Devolução de Produtos"},
+                            {"link": "", "texto": "Lançamento De Crédito Direto"},
+                            {"link": "", "texto": "Crédito de Cliente Pendentes"},
+                            {"link": "", "texto": "Crédito de Cliente Finalizados"},
+                            {"link": "", "texto": "Crédito de Cliente Com Nota de Devolução Pendente"}
+                            ]'>
+                            Crédito Cliente
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Assistente de Compras"},
+                            {"link": "", "texto": "Pedido de Compra", "niveis": [
+                                {"link": "", "texto": "Lançamento"},
+                                {"link": "", "texto": "Pendentes"},
+                                {"link": "", "texto": "Finalizados"}
+                            ]},
+                            {"link": "", "texto": "Cotação", "niveis": [
+                                {"link": "", "texto": "Cadastro"},
+                                {"link": "", "texto": "Registro de Preço Por Fornecedor"}
+                            ]}
+                            ]'>
+                            Compras
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Suprimentos"},
+                            {"link": "", "texto": "Sangrias"},
+                            {"link": "", "texto": "Físico", "niveis": [
+                                {"link": "", "texto": "Lançamento"},
+                                {"link": "", "texto": "Consulta"},
+                                {"link": "", "texto": "Cancelados"}
+                            ]},
+                            {"link": "", "texto": "Estorno de Pagamento Correntista"},
+                            {"link": "", "texto": "Lançamento Valor Correntista"}
+                            ]'>
+                            Frente de Loja
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Pendentes"},
+                            {"link": "", "texto": "Finalizados"}
+                            ]'>
+                            Notas Contra o CNPJ
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Consulta"},
+                            {"link": "", "texto": "Lançamento de Nota de Terceiros"},
+                            {"link": "", "texto": "Emissão Própria de NFe"},
+                            {"link": "", "texto": "Pendentes"},
+                            {"link": "", "texto": "Canceladas"},
+                            {"link": "", "texto": "Denegadas"},
+                            {"link": "", "texto": "Inutilizadas"}
+                            ]'>
+                            NFe de Entrada
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Emissão"},
+                            {"link": "", "texto": "Consulta"},
+                            {"link": "", "texto": "Pendentes"},
+                            {"link": "", "texto": "Canceladas"},
+                            {"link": "", "texto": "Denegadas"},
+                            {"link": "", "texto": "Inutilizadas"}
+                            ]'>
+                            NFe de Saída
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Emissão"},
+                            {"link": "", "texto": "Ativar/Desativar Contingência"},
+                            {"link": "", "texto": "Consulta"},
+                            {"link": "", "texto": "Pendente em Contingência"},
+                            {"link": "", "texto": "Canceladas"},
+                            {"link": "", "texto": "Inutilizadas"}
+                            ]'>
+                            NFC-e/CF-E
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Lançamento"},
+                            {"link": "", "texto": "Finalizadas"},
+                            {"link": "", "texto": "Eliminadas"}
+                            ]'>
+                            Ordem de Serviço
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Consulta"},
+                            {"link": "", "texto": "Canceladas"}
+                            ]'>
+                            Nota Manual
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Desperdícios", "niveis": [
+                                {"link": "", "texto": "Consulta"},
+                                {"link": "", "texto": "Lançamento"}
+                            ]},
+                            {"link": "", "texto": "Ordem de Produção"},
+                            {"link": "", "texto": "Produção Avulsa"},
+                            {"link": "", "texto": "Produção", "niveis": [
+                                {"link": "", "texto": "Lançamento"},
+                                {"link": "", "texto": "Lançamento em Lote"},
+                                {"link": "", "texto": "Consulta"}
+                            ]},
+                            {"link": "", "texto": "Desmembramento", "niveis": [
+                                {"link": "", "texto": "Consulta"}
+                                {"link": "", "texto": "Lançamento"},
+                            ]}
+                            ]'>
+                            Indústria
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Pendentes"},
+                            {"link": "", "texto": "Finalizados"},
+                            {"link": "", "texto": "Cancelados"},
+                            {"link": "", "texto": "Integração"},
+                            {"link": "", "texto": "Painel de Entregas"}
+                            ]'>
+                            Pedido de Venda
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Cadastro"},
+                            {"link": "", "texto": "Pendentes"},
+                            {"link": "", "texto": "Finalizadas"}
+                            ]'>
+                            Retiradas
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Cadastro"},
+                            {"link": "", "texto": "Finalizados"}
+                            ]'>
+                            Romaneio de Entregas
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Solicitação Entre Filias", "niveis": [
+                                {"link": "", "texto": "Opções de Produto"},
+                                {"link": "", "texto": "Lançar"},
+                                {"link": "", "texto": "Solicitações da Filial"},
+                                {"link": "", "texto": "Solicitações para Filial"}
+                            ]},
+                            {"link": "", "texto": "Consulta"},
+                            {"link": "", "texto": "Transf. Direta"}
+                            ]'>
+                            Transf. Entre filiais
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Lançamento"},
+                            {"link": "", "texto": "Consulta"},
+                            {"link": "", "texto": "Cancelados"}
+                            ]'>
+                            Uso e Consumo
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Transferências"},
+                            {"link": "", "texto": "Solicitações"}
+                            ]'>
+                            Transf. Entre Estoques
+                        </a>
                     </div>
                 </div>
             </li>
@@ -134,11 +361,56 @@
                 </a>
                 <div id="collapse3" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <h6 class="collapse-header">Financeiro:</h6>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Lançamento"},
+                            {"link": "", "texto": "Consulta"},
+                            {"link": "", "texto": "Importar Lançamento Caixa"}
+                            ]'>
+                            Entradas
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Lançamento"},
+                            {"link": "", "texto": "Consulta"}
+                            ]'>
+                            Saídas
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Lançamento"},
+                            {"link": "", "texto": "Consulta"}
+                            ]'>
+                            Transferências
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Central de Custo
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Grupos de C. Correntes
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Contas Correntes
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Contas Correntes
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Grupo de Despesas
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Despesas
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Grupo de Receitas
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Receitas
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Importar OFX"},
+                            {"link": "", "texto": "Consulta Transações Pendentes"}
+                            ]'>
+                            OFX
+                        </a>
                     </div>
                 </div>
             </li>
@@ -160,11 +432,70 @@
                 </a>
                 <div id="collapse4" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <h6 class="collapse-header">Contas:</h6>
+                        <a class="collapse-item" href="#">
+                            Contas a Pagar
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Cadastro"},
+                            {"link": "", "texto": "Negociar"}
+                            ]'>
+                            Contas a Receber
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Contas Pagas
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Contas Recebidas
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Contas a Pagar"},
+                            {"link": "", "texto": "Contas a Receber"}
+                            ]'>
+                            Contas Canceladas
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Adm. de Cartão
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Sincronização de Cartão
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Itaú", "niveis": [
+                                {"link": "", "texto": "Opção 1"},
+                                {"link": "", "texto": "Opção 2"}
+                            ]},
+                            {"link": "", "texto": "Banco do Nordeste", "niveis": [
+                                {"link": "", "texto": "Opção 1"},
+                                {"link": "", "texto": "Opção 2"}
+                            ]}
+                            ]'>
+                            Boletos
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Itaú", "niveis": [
+                                {"link": "", "texto": "Opção 1"},
+                                {"link": "", "texto": "Opção 2"}
+                            ]},
+                            {"link": "", "texto": "Banco do Nordeste", "niveis": [
+                                {"link": "", "texto": "Opção 1"},
+                                {"link": "", "texto": "Opção 2"}
+                            ]}
+                            ]'>
+                            Arquivos de Remessa
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Itaú", "niveis": [
+                                {"link": "", "texto": "Opção 1"},
+                                {"link": "", "texto": "Opção 2"}
+                            ]},
+                            {"link": "", "texto": "Banco do Nordeste", "niveis": [
+                                {"link": "", "texto": "Opção 1"},
+                                {"link": "", "texto": "Opção 2"}
+                            ]}
+                            ]'>
+                            Arquviso de Retorno
+                        </a>
                     </div>
                 </div>
             </li>
@@ -185,11 +516,57 @@
                 <div id="collapseUtilities5" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <h6 class="collapse-header">Relatórios:</h6>
+                        <a class="collapse-item" href="#">
+                            Clientes
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Compras
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Contas a Pagar"},
+                            {"link": "", "texto": "Contas a Receber"},
+                            {"link": "", "texto": "Contas Pagas"},
+                            {"link": "", "texto": "Contas Recebidas"}
+                            ]'>
+                            Contas
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Financeiro
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Fornecedores
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Entrada"},
+                            {"link": "", "texto": "Saída"}
+                            ]'>
+                            Notas
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Indústria
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Ordem de Serviço
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Pedidos
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Produtos
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Vendas
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Vendedores
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Personalizados
+                        </a>
+                        <!-- <a class="collapse-item" href="#">
+                            Dashboard
+                        </a> -->
                     </div>
                 </div>
             </li>
@@ -205,16 +582,46 @@
                                 d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
                         </svg>
                     </i>
-                    <span>Utilitarios</span>
+                    <span>Utilitários</span>
                 </a>
                 <div id="collapseUtilities6" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <h6 class="collapse-header">Utilitários:</h6>
+                        <a class="collapse-item" href="#">
+                            Arquivos
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Forçar Sinc. do PDV
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Portal Utilitários
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Validar NCM"}
+                            ]'>
+                            Validar Cadastro para <br>
+                            Emissão de Documentos
+                        </a>
+                        <a class="collapse-item" href="#" data-opcoes='[
+                            {"link": "", "texto": "Alterar ICMS Venda"},
+                            {"link": "", "texto": "Alterar Código NCM"},
+                            {"link": "", "texto": "Recalcular Custos de Produtos"}
+                            ]'>
+                            Alteração em Massa
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Redimento/Equivalencia <br>
+                            Unitaria Igual a Um
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Alterar Senha <br>
+                            Usuário Suporte
+                        </a>
+                        <a class="collapse-item" href="#">
+                            Ajustar Casas <br>
+                            Decimais Estoque
+                        </a>
                     </div>
                 </div>
             </li>
@@ -236,14 +643,17 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
+                        <h6 class="collapse-header">Template:</h6>
                         <a class="collapse-item" href="login.html">Login</a>
                         <a class="collapse-item" href="register.html">Register</a>
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
+                        <div class="collapse-divider"></div>
                         <a class="collapse-item" href="404.html">404 Page</a>
                         <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
                     </div>
                 </div>
             </li>
@@ -269,16 +679,6 @@
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
-            <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components,
-                    and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to
-                    Pro!</a>
-            </div>
-
         </ul>
         <!-- End of Sidebar -->
 
@@ -457,28 +857,56 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Filial 1</span>
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
+                                    <!-- <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Alterar Senha do Usuário
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
+                                    <!-- <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Central de Relatórios
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                    <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Filiais
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Níveis de Acesso
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Parâmetros
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Usuários
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Planos de Contas EFD
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Zerar Pontos Fidelidade
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Sobre
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Estoques
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    Sair
                                 </a>
                             </div>
                         </li>
@@ -798,21 +1226,6 @@
                                         unDraw &rarr;</a>
                                 </div>
                             </div>
-
-                            <!-- Approach -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
-                                        CSS bloat and poor page performance. Custom CSS classes are used to create
-                                        custom components and custom utility classes.</p>
-                                    <p class="mb-0">Before working with this theme, you should become familiar with the
-                                        Bootstrap framework, especially the utility classes.</p>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
 
@@ -843,21 +1256,227 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
+    <!-- Op Modal-->
+    <div class="modal fade" id="opModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pronto para Sair?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse2"
+                                aria-expanded="true" aria-controls="collapse2">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-file-earmark-bar-graph-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m.5 10v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5m-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z" />
+                                    </svg>
+                                </i>
+                                <span>Movimentações</span>
+                            </a>
+                            <div id="collapse2" class="collapse" aria-labelledby="headingUtilities"
+                                data-parent="#accordionSidebar">
+                                <div class="bg-white py-2 collapse-inner rounded">
+                                    <h6 class="collapse-header">Movimentações:</h6>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Ajustes de Estoques"},
+                                        {"link": "", "texto": "Contagem", "niveis": [
+                                            {"link": "", "texto": "Lançamento"},
+                                            {"link": "", "texto": "Pendentes"},
+                                            {"link": "", "texto": "Processadas"}
+                                        ]},
+                                        {"link": "", "texto": "Atendentes"}
+                                        ]'>
+                                        Ajuste de Estoque
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Lançamento Por Devolução de Produtos"},
+                                        {"link": "", "texto": "Lançamento De Crédito Direto"},
+                                        {"link": "", "texto": "Crédito de Cliente Pendentes"},
+                                        {"link": "", "texto": "Crédito de Cliente Finalizados"},
+                                        {"link": "", "texto": "Crédito de Cliente Com Nota de Devolução Pendente"}
+                                        ]'>
+                                        Crédito Cliente
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Assistente de Compras"},
+                                        {"link": "", "texto": "Pedido de Compra", "niveis": [
+                                            {"link": "", "texto": "Lançamento"},
+                                            {"link": "", "texto": "Pendentes"},
+                                            {"link": "", "texto": "Finalizados"}
+                                        ]},
+                                        {"link": "", "texto": "Cotação", "niveis": [
+                                            {"link": "", "texto": "Cadastro"},
+                                            {"link": "", "texto": "Registro de Preço Por Fornecedor"}
+                                        ]}
+                                        ]'>
+                                        Compras
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Suprimentos"},
+                                        {"link": "", "texto": "Sangrias"},
+                                        {"link": "", "texto": "Físico", "niveis": [
+                                            {"link": "", "texto": "Lançamento"},
+                                            {"link": "", "texto": "Consulta"},
+                                            {"link": "", "texto": "Cancelados"}
+                                        ]},
+                                        {"link": "", "texto": "Estorno de Pagamento Correntista"},
+                                        {"link": "", "texto": "Lançamento Valor Correntista"}
+                                        ]'>
+                                        Frente de Loja
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Pendentes"},
+                                        {"link": "", "texto": "Finalizados"}
+                                        ]'>
+                                        Notas Contra o CNPJ
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Consulta"},
+                                        {"link": "", "texto": "Lançamento de Nota de Terceiros"},
+                                        {"link": "", "texto": "Emissão Própria de NFe"},
+                                        {"link": "", "texto": "Pendentes"},
+                                        {"link": "", "texto": "Canceladas"},
+                                        {"link": "", "texto": "Denegadas"},
+                                        {"link": "", "texto": "Inutilizadas"}
+                                        ]'>
+                                        NFe de Entrada
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Emissão"},
+                                        {"link": "", "texto": "Consulta"},
+                                        {"link": "", "texto": "Pendentes"},
+                                        {"link": "", "texto": "Canceladas"},
+                                        {"link": "", "texto": "Denegadas"},
+                                        {"link": "", "texto": "Inutilizadas"}
+                                        ]'>
+                                        NFe de Saída
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Emissão"},
+                                        {"link": "", "texto": "Ativar/Desativar Contingência"},
+                                        {"link": "", "texto": "Consulta"},
+                                        {"link": "", "texto": "Pendente em Contingência"},
+                                        {"link": "", "texto": "Canceladas"},
+                                        {"link": "", "texto": "Inutilizadas"}
+                                        ]'>
+                                        NFC-e/CF-E
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Lançamento"},
+                                        {"link": "", "texto": "Finalizadas"},
+                                        {"link": "", "texto": "Eliminadas"}
+                                        ]'>
+                                        Ordem de Serviço
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Consulta"},
+                                        {"link": "", "texto": "Canceladas"}
+                                        ]'>
+                                        Nota Manual
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Desperdícios", "niveis": [
+                                            {"link": "", "texto": "Consulta"},
+                                            {"link": "", "texto": "Lançamento"}
+                                        ]},
+                                        {"link": "", "texto": "Ordem de Produção"},
+                                        {"link": "", "texto": "Produção Avulsa"},
+                                        {"link": "", "texto": "Produção", "niveis": [
+                                            {"link": "", "texto": "Lançamento"},
+                                            {"link": "", "texto": "Lançamento em Lote"},
+                                            {"link": "", "texto": "Consulta"}
+                                        ]},
+                                        {"link": "", "texto": "Desmembramento", "niveis": [
+                                            {"link": "", "texto": "Consulta"}
+                                            {"link": "", "texto": "Lançamento"},
+                                        ]}
+                                        ]'>
+                                        Indústria
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Pendentes"},
+                                        {"link": "", "texto": "Finalizados"},
+                                        {"link": "", "texto": "Cancelados"},
+                                        {"link": "", "texto": "Integração"},
+                                        {"link": "", "texto": "Painel de Entregas"}
+                                        ]'>
+                                        Pedido de Venda
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Cadastro"},
+                                        {"link": "", "texto": "Pendentes"},
+                                        {"link": "", "texto": "Finalizadas"}
+                                        ]'>
+                                        Retiradas
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Cadastro"},
+                                        {"link": "", "texto": "Finalizados"}
+                                        ]'>
+                                        Romaneio de Entregas
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Solicitação Entre Filias", "niveis": [
+                                            {"link": "", "texto": "Opções de Produto"},
+                                            {"link": "", "texto": "Lançar"},
+                                            {"link": "", "texto": "Solicitações da Filial"},
+                                            {"link": "", "texto": "Solicitações para Filial"}
+                                        ]},
+                                        {"link": "", "texto": "Consulta"},
+                                        {"link": "", "texto": "Transf. Direta"}
+                                        ]'>
+                                        Transf. Entre filiais
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Lançamento"},
+                                        {"link": "", "texto": "Consulta"},
+                                        {"link": "", "texto": "Cancelados"}
+                                        ]'>
+                                        Uso e Consumo
+                                    </a>
+                                    <a class="collapse-item" href="#" data-opcoes='[
+                                        {"link": "", "texto": "Transferências"},
+                                        {"link": "", "texto": "Solicitações"}
+                                        ]'>
+                                        Transf. Entre Estoques
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="exampleModalLabel">Pronto para Sair?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Fechar">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Selecione "Sair" abaixo se você estiver pronto para encerrar sua sessão atual.
+                </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html">Sair</a>
                 </div>
             </div>
         </div>
@@ -888,22 +1507,56 @@
 
             $('.collapse-item').on('click', function () {
                 let opcoes = $(this).data('opcoes');
-                
+
                 if (opcoes != null) {
 
-                    let htmlContent = `<h5>Opções</h5><div class="list-group">`;
-                    opcoes.forEach((opcao, index) => {
-                        htmlContent += `<button type="button" class="btn ${index % 2 === 0 ? 'btn-secondary' : 'btn-primary'} btn-lg btn-block">${opcao.texto}</button>`;
-                    });
-                    htmlContent += '</div>';
+                    // let htmlContent = `
+                    //     <h5>Opções:</h5>
+                    //     <div class="list-group">
+                    // `;
 
-                    Swal.fire({
-                        title: $(this).text(),
-                        showCloseButton: true,
-                        showConfirmButton: false,
-                        html: htmlContent,
-                        icon: 'info',
-                    });
+                    // opcoes.forEach((opcao, index) => {
+                    //     if (opcao.niveis && Array.isArray(opcao.niveis)) {
+
+                    //         htmlContent += `
+                    //             <div class="dropdown mb-2">
+                    //                 <a class="btn ${index % 2 === 0 ? 'btn-secondary' : 'btn-primary'} dropdown-toggle btn-lg btn-block" 
+                    //                 href="#" role="button"
+                    //                 data-toggle="dropdown" 
+                    //                 aria-expanded="false" 
+                    //                 style="width: 100%;">
+                    //                     ${opcao.texto}
+                    //                 </a>
+                    //                 <div class="dropdown-menu" style="width: 100%;"> <!-- Ajusta a largura do dropdown -->
+                    //         `;
+
+                    //         opcao.niveis.forEach((nivel, index) => {
+                    //             htmlContent += `
+                    //                 <a class="dropdown-item" href="${nivel.link}">${nivel.texto}</a>
+                    //                 `;
+                    //             if (index < opcao.niveis.length - 1) {
+                    //                 htmlContent += `<div class="dropdown-divider"></div>`;
+                    //             }
+                    //         });
+
+                    //         htmlContent += `
+                    //                 </div>
+                    //             </div>
+                    //         `;
+                    //     } else {
+                    //         htmlContent += `<button type="button" class="btn ${index % 2 === 0 ? 'btn-secondary' : 'btn-primary'} btn-lg btn-block mb-2">${opcao.texto}</button>`;
+                    //     }
+                    // });
+
+                    // htmlContent += '</div>';
+
+                    // Swal.fire({
+                    //     title: $(this).text(),
+                    //     showCloseButton: true,
+                    //     showConfirmButton: false,
+                    //     html: htmlContent,
+                    //     icon: 'info',
+                    // });
                 } else {
 
                 }
