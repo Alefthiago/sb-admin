@@ -22,6 +22,15 @@
     <!-- <link href="css/sb-admin-2.min.css" rel="stylesheet"> -->
 
 </head>
+<style>
+    .arrow {
+        transition: transform 0.3s ease;
+    }
+
+    .rotate {
+        transform: rotate(90deg);
+    }
+</style>
 
 <body id="page-top">
 
@@ -48,6 +57,7 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
+
             </li>
 
             <!-- Divider -->
@@ -78,39 +88,86 @@
                 <div id="collapse1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Cadastros:</h6>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Cadastros"},
-                            {"link": "", "texto": "Eliminados"},
-                            {"link": "", "texto": "Categorias"},
-                            {"link": "", "texto": "Tipos"},
-                            {"link": "", "texto": "Profissões"}
-                            ]'>
-                            Clientes
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseCliente"
+                            aria-expanded="false" aria-controls="collapseCliente">
+                            Clientes <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Condutores"},
-                            {"link": "", "texto": "Veículos"}
-                            ]'>
-                            Entregas
+                        <div id="collapseCliente" class="collapse" aria-labelledby="headingCliente"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Clientes:</h6>
+                                <a class="collapse-item" href="#">
+                                    Cadastros
+                                </a>
+                                <a class="collapse-item" href="#">
+                                    Eliminados
+                                </a>
+                                <a class="collapse-item" href="#">
+                                    Categorias
+                                </a>
+                                <a class="collapse-item" href="#">
+                                    Tipos
+                                </a>
+                                <a class="collapse-item" href="#">
+                                    Profissões
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseEntregas"
+                            aria-expanded="false" aria-controls="collapseEntregas">
+                            Entregas <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseEntregas" class="collapse" aria-labelledby="headingEntregas"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Entregas:</h6>
+                                <a class="collapse-item" href="#">
+                                    Cadastros
+                                </a>
+                                <a class="collapse-item" href="#">
+                                    Veículos
+                                </a>
+                            </div>
+                        </div>
+
+
                         <a class="collapse-item" href="#" data-opcoes="null">
                             Formas de Pagamento
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Cadastros"},
-                            {"link": "", "texto": "Eliminados"},
-                            {"link": "", "texto": "Compradores"},
-                            {"link": "", "texto": "Compradores"}
-                            ]'>
-                            Fornecedores
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseFornecedores" aria-expanded="false"
+                            aria-controls="collapseFornecedores">
+                            Fornecedores <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseFornecedores" class="collapse" aria-labelledby="headingFornecedores"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Fornecedores:</h6>
+                                <a class="collapse-item" href="#">
+                                    Cadastros
+                                </a>
+                                <a class="collapse-item" href="#">
+                                    Eliminados
+                                </a>
+                                <a class="collapse-item" href="#">
+                                    Compradores
+                                </a>
+                                <a class="collapse-item" href="#">
+                                    Linhas de <br>
+                                    Fornecedor
+                                </a>
+                            </div>
+                        </div>
                         <a class="collapse-item" href="#" data-opcoes="null">
                             Indicações
                         </a>
                         <a class="collapse-item" href="#" data-opcoes="null">
                             Natureza de Operações
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
+                        <!-- <a class="collapse-item" href="#" data-opcoes='[
                             {"link": "", "texto": "Atendentes", "niveis": [
                                 {"link": "", "texto": "Cadastros"},
                                 {"link": "", "texto": "Eliminados"}
@@ -125,39 +182,122 @@
                             ]}
                             ]'>
                             Ordem de Serviço
+                        </a> -->
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseOs"
+                            aria-expanded="false" aria-controls="collapseOs">
+                            Ordem de Serviço <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Cadastros"},
-                            {"link": "", "texto": "Complementos"},
-                            {"link": "", "texto": "Seções"},
-                            {"link": "", "texto": "Grupos"},
-                            {"link": "", "texto": "Famílias"},
-                            {"link": "", "texto": "Marcas"},
-                            {"link": "", "texto": "Unidade de Medida"},
-                            {"link": "", "texto": "Etapas de Produção"},
-                            {"link": "", "texto": "Setores de Produção"},
-                            {"link": "", "texto": "Perfis Tributários"}
-                            ]'>
-                            Produtos
+                        <div id="collapseOs" class="collapse" aria-labelledby="headingOs" data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Ordem de Serviço:</h6>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Cadastros"},
+                                    {"link": "", "texto": "Eliminados"}
+                                ]'>
+                                    Atendentes
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Cadastros"},
+                                    {"link": "", "texto": "Eliminados"}
+                                ]'>
+                                    Pet Shop
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Cadastros"},
+                                    {"link": "", "texto": "Eliminados"}
+                                ]'>
+                                    Serviços
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseProdutos"
+                            aria-expanded="false" aria-controls="collapseProdutos">
+                            Produtos <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Cadastrar"},
-                            {"link": "", "texto": "Ativas"},
-                            {"link": "", "texto": "Canceladas"},
-                            {"link": "", "texto": "Futuras"},
-                            {"link": "", "texto": "Vencidas"}
-                            ]'>
-                            Promoções
+                        <div id="collapseProdutos" class="collapse" aria-labelledby="headingProdutos"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Produtos:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Cadastros
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Complementos
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Seções
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Grupos
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Famílias
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Marcas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Unidade de Medida
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Etapas de Produção
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Setores de Produção
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Perfis Tributários
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapsePromocoes"
+                            aria-expanded="false" aria-controls="collapsePromocoes">
+                            Promoções <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapsePromocoes" class="collapse" aria-labelledby="headingPromocoes"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Promoções:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Cadastrar
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Ativas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Canceladas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Futuras
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Vencidas
+                                </a>
+                            </div>
+                        </div>
+
                         <a class="collapse-item" href="#" data-opcoes="null">
                             Transportadoras
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Cadastros"},
-                            {"link": "", "texto": "Eliminados"}
-                            ]'>
-                            Vendedores
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseVendedores"
+                            aria-expanded="false" aria-controls="collapseVendedores">
+                            Vendedores <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseVendedores" class="collapse" aria-labelledby="headingVendedores"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Vendedores:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Cadastros
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Eliminados
+                                </a>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -179,17 +319,33 @@
                 <div id="collapse2" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Movimentações:</h6>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Ajustes de Estoques"},
-                            {"link": "", "texto": "Contagem", "niveis": [
-                                {"link": "", "texto": "Lançamento"},
-                                {"link": "", "texto": "Pendentes"},
-                                {"link": "", "texto": "Processadas"}
-                            ]},
-                            {"link": "", "texto": "Atendentes"}
-                            ]'>
-                            Ajuste de Estoque
+
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseAjusteEstoque" aria-expanded="false"
+                            aria-controls="collapseAjusteEstoque">
+                            Ajuste de Estoque <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseAjusteEstoque" class="collapse" aria-labelledby="headingAjusteEstoque"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Ajuste de Estoque:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Ajustes de Estoques
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Lançamento"},
+                                    {"link": "", "texto": "Pendentes"},
+                                    {"link": "", "texto": "Processadas"}
+                                ]'>
+                                    Contagem
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Atendentes
+                                </a>
+                            </div>
+                        </div>
+
                         <a class="collapse-item" href="#" data-opcoes='[
                             {"link": "", "texto": "Lançamento Por Devolução de Produtos"},
                             {"link": "", "texto": "Lançamento De Crédito Direto"},
@@ -199,149 +355,418 @@
                             ]'>
                             Crédito Cliente
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Assistente de Compras"},
-                            {"link": "", "texto": "Pedido de Compra", "niveis": [
-                                {"link": "", "texto": "Lançamento"},
-                                {"link": "", "texto": "Pendentes"},
-                                {"link": "", "texto": "Finalizados"}
-                            ]},
-                            {"link": "", "texto": "Cotação", "niveis": [
-                                {"link": "", "texto": "Cadastro"},
-                                {"link": "", "texto": "Registro de Preço Por Fornecedor"}
-                            ]}
-                            ]'>
-                            Compras
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseCreditoCliente" aria-expanded="false"
+                            aria-controls="collapseCreditoCliente">
+                            Crédito Cliente <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Suprimentos"},
-                            {"link": "", "texto": "Sangrias"},
-                            {"link": "", "texto": "Físico", "niveis": [
-                                {"link": "", "texto": "Lançamento"},
-                                {"link": "", "texto": "Consulta"},
-                                {"link": "", "texto": "Cancelados"}
-                            ]},
-                            {"link": "", "texto": "Estorno de Pagamento Correntista"},
-                            {"link": "", "texto": "Lançamento Valor Correntista"}
-                            ]'>
-                            Frente de Loja
+                        <div id="collapseCreditoCliente" class="collapse" aria-labelledby="headingCreditoCliente"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Crédito Cliente:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Lançamento Por <br>
+                                    Devolução de <br>
+                                    Produtos
+                                </a>
+
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Lançamento De <br>
+                                    Crédito Direto
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Crédito de <br>
+                                    Cliente Pendentes
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Crédito de <br>
+                                    Cliente Finalizados
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Crédito de Cliente <br>
+                                    Com Nota de <br>
+                                    Devolução <br>
+                                    Pendente
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseCompras"
+                            aria-expanded="false" aria-controls="collapseCompras">
+                            Compras <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Pendentes"},
-                            {"link": "", "texto": "Finalizados"}
-                            ]'>
-                            Notas Contra o CNPJ
+                        <div id="collapseCompras" class="collapse" aria-labelledby="headingCompras"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Compras:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Assistente <br>
+                                    de Compras
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Lançamento"},
+                                    {"link": "", "texto": "Pendentes"},
+                                    {"link": "", "texto": "Finalizados"}
+                                ]'>
+                                    Pedido de Compra
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes=' [
+                                    {"link": "", "texto": "Cadastro"},
+                                    {"link": "", "texto": "Registro de Preço Por Fornecedor"}
+                                ]'>
+                                    Cotação
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseFrenteLoja"
+                            aria-expanded="false" aria-controls="collapseFrenteLoja">
+                            Frente de Loja <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Consulta"},
-                            {"link": "", "texto": "Lançamento de Nota de Terceiros"},
-                            {"link": "", "texto": "Emissão Própria de NFe"},
-                            {"link": "", "texto": "Pendentes"},
-                            {"link": "", "texto": "Canceladas"},
-                            {"link": "", "texto": "Denegadas"},
-                            {"link": "", "texto": "Inutilizadas"}
-                            ]'>
-                            NFe de Entrada
+                        <div id="collapseFrenteLoja" class="collapse" aria-labelledby="headingFrenteLoja"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Frente de Loja:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Suprimentos
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Sangrias
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Lançamento"},
+                                    {"link": "", "texto": "Consulta"},
+                                    {"link": "", "texto": "Cancelados"}
+                                ]'>
+                                    Físico
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Estorno de <br>
+                                    Pagamento <br>
+                                    Correntista
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Lançamento <br>
+                                    Valor Correntista
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseNfContraCnpj" aria-expanded="false"
+                            aria-controls="collapseNfContraCnpj">
+                            Notas Contra o CNPJ <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Emissão"},
-                            {"link": "", "texto": "Consulta"},
-                            {"link": "", "texto": "Pendentes"},
-                            {"link": "", "texto": "Canceladas"},
-                            {"link": "", "texto": "Denegadas"},
-                            {"link": "", "texto": "Inutilizadas"}
-                            ]'>
-                            NFe de Saída
+                        <div id="collapseNfContraCnpj" class="collapse" aria-labelledby="headingNfContraCnpj"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Notas Contra o CNPJ:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Pendentes
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Finalizados
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseNfeEntrada"
+                            aria-expanded="false" aria-controls="collapseNfeEntrada">
+                            NFe de Entrada <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Emissão"},
-                            {"link": "", "texto": "Ativar/Desativar Contingência"},
-                            {"link": "", "texto": "Consulta"},
-                            {"link": "", "texto": "Pendente em Contingência"},
-                            {"link": "", "texto": "Canceladas"},
-                            {"link": "", "texto": "Inutilizadas"}
-                            ]'>
-                            NFC-e/CF-E
+                        <div id="collapseNfeEntrada" class="collapse" aria-labelledby="headingNfeEntrada"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">NFe de Entrada:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consulta
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Lançamento de <br>
+                                    Nota de Terceiros
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Emissão Própria <br>
+                                    de NFe
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Pendentes
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Canceladas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Denegadas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Inutilizadas
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseNfeSaida"
+                            aria-expanded="false" aria-controls="collapseNfeSaida">
+                            NFe de Saída <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Lançamento"},
-                            {"link": "", "texto": "Finalizadas"},
-                            {"link": "", "texto": "Eliminadas"}
-                            ]'>
-                            Ordem de Serviço
+                        <div id="collapseNfeSaida" class="collapse" aria-labelledby="headingNfeSaida"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">NFe de Saída:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Emissão
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consulta
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Pendentes
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Canceladas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Denegadas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Inutilizadas
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseNFCeCFE"
+                            aria-expanded="false" aria-controls="collapseNFCeCFE">
+                            NFC-e/CF-E <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Consulta"},
-                            {"link": "", "texto": "Canceladas"}
-                            ]'>
-                            Nota Manual
+                        <div id="collapseNFCeCFE" class="collapse" aria-labelledby="headingNFCeCFE"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">NFC-e/CF-E:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Emissão
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Ativar/Desativar <br>
+                                    Contingência
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consulta
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Pendente em <br>
+                                    Contingência
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Canceladas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Inutilizadas
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseOs"
+                            aria-expanded="false" aria-controls="collapseOs">
+                            Ordem de Serviço <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Desperdícios", "niveis": [
-                                {"link": "", "texto": "Consulta"},
-                                {"link": "", "texto": "Lançamento"}
-                            ]},
-                            {"link": "", "texto": "Ordem de Produção"},
-                            {"link": "", "texto": "Produção Avulsa"},
-                            {"link": "", "texto": "Produção", "niveis": [
-                                {"link": "", "texto": "Lançamento"},
-                                {"link": "", "texto": "Lançamento em Lote"},
-                                {"link": "", "texto": "Consulta"}
-                            ]},
-                            {"link": "", "texto": "Desmembramento", "niveis": [
-                                {"link": "", "texto": "Consulta"}
-                                {"link": "", "texto": "Lançamento"},
-                            ]}
-                            ]'>
-                            Indústria
+                        <div id="collapseOs" class="collapse" aria-labelledby="headingOs" data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Ordem de Serviço:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Lançamento
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Finalizadas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Eliminadas
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseNotaManual"
+                            aria-expanded="false" aria-controls="collapseNotaManual">
+                            Nota Manual <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Pendentes"},
-                            {"link": "", "texto": "Finalizados"},
-                            {"link": "", "texto": "Cancelados"},
-                            {"link": "", "texto": "Integração"},
-                            {"link": "", "texto": "Painel de Entregas"}
-                            ]'>
-                            Pedido de Venda
+                        <div id="collapseNotaManual" class="collapse" aria-labelledby="headingNotaManual"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Nota Manual:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consulta
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Canceladas
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseIndustria"
+                            aria-expanded="false" aria-controls="collapseIndustria">
+                            Indústria <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Cadastro"},
-                            {"link": "", "texto": "Pendentes"},
-                            {"link": "", "texto": "Finalizadas"}
-                            ]'>
-                            Retiradas
+                        <div id="collapseIndustria" class="collapse" aria-labelledby="headingIndustria"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Indústria:</h6>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Consulta"},
+                                    {"link": "", "texto": "Lançamento"}
+                                ]'>
+                                    Desperdícios
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Ordem de Produção
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Produção Avulsa
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Lançamento"},
+                                    {"link": "", "texto": "Lançamento em Lote"},
+                                    {"link": "", "texto": "Consulta"}
+                                ]'>
+                                    Produção
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Consulta"}
+                                    {"link": "", "texto": "Lançamento"},
+                                ]'>
+                                    Desmembramento
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapsePedidoVenda"
+                            aria-expanded="false" aria-controls="collapsePedidoVenda">
+                            Pedido de Venda <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Cadastro"},
-                            {"link": "", "texto": "Finalizados"}
-                            ]'>
-                            Romaneio de Entregas
+                        <div id="collapsePedidoVenda" class="collapse" aria-labelledby="headingPedidoVenda"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Pedido de Venda:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Pendentes
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Finalizados
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Cancelados
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Integração
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Painel de Entregas
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseRetiradas"
+                            aria-expanded="false" aria-controls="collapseRetiradas">
+                            Retiradas <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Solicitação Entre Filias", "niveis": [
-                                {"link": "", "texto": "Opções de Produto"},
-                                {"link": "", "texto": "Lançar"},
-                                {"link": "", "texto": "Solicitações da Filial"},
-                                {"link": "", "texto": "Solicitações para Filial"}
-                            ]},
-                            {"link": "", "texto": "Consulta"},
-                            {"link": "", "texto": "Transf. Direta"}
-                            ]'>
-                            Transf. Entre filiais
+                        <div id="collapseRetiradas" class="collapse" aria-labelledby="headingRetiradas"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Retiradas:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Cadastro
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Pendentes
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Finalizadas
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseRomaneioEntregas" aria-expanded="false"
+                            aria-controls="collapseRomaneioEntregas">
+                            Romaneio de Entregas <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Lançamento"},
-                            {"link": "", "texto": "Consulta"},
-                            {"link": "", "texto": "Cancelados"}
-                            ]'>
-                            Uso e Consumo
+                        <div id="collapseRomaneioEntregas" class="collapse" aria-labelledby="headingRomaneioEntregas"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Romaneio de Entregas:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Cadastro
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Finalizadas
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseTransfEntreFiliais" aria-expanded="false"
+                            aria-controls="collapseTransfEntreFiliais">
+                            Transf. Entre filiais <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Transferências"},
-                            {"link": "", "texto": "Solicitações"}
-                            ]'>
-                            Transf. Entre Estoques
+                        <div id="collapseTransfEntreFiliais" class="collapse"
+                            aria-labelledby="headingTransfEntreFiliais" data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Transf. Entre filiais:</h6>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Opções de Produto"},
+                                    {"link": "", "texto": "Lançar"},
+                                    {"link": "", "texto": "Solicitações da Filial"},
+                                    {"link": "", "texto": "Solicitações para Filial"}
+                                ]'>
+                                    Solicitação <br>
+                                    Entre Filias
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consulta
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Transf. Direta
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseUsoConsumo"
+                            aria-expanded="false" aria-controls="collapseUsoConsumo">
+                            Uso e Consumo <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseUsoConsumo" class="collapse" aria-labelledby="headingUsoConsumo"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Uso e Consumo:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Lançamento
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consulta
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Cancelados
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseTransfEntreEstoques" aria-expanded="false"
+                            aria-controls="collapseTransfEntreEstoques">
+                            Transf. Entre <br>
+                            Estoques <i class="fas fa-chevron-right arrow"></i>
+                        </a>
+                        <div id="collapseTransfEntreEstoques" class="collapse"
+                            aria-labelledby="headingTransfEntreEstoques" data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Transf. Entre <br>
+                                    Estoques:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Transferências
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Solicitações
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -362,55 +787,112 @@
                 <div id="collapse3" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Financeiro:</h6>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Lançamento"},
-                            {"link": "", "texto": "Consulta"},
-                            {"link": "", "texto": "Importar Lançamento Caixa"}
-                            ]'>
-                            Entradas
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseEntradas"
+                            aria-expanded="false" aria-controls="collapseEntradas">
+                            Entradas <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Lançamento"},
-                            {"link": "", "texto": "Consulta"}
-                            ]'>
-                            Saídas
+                        <div id="collapseEntradas" class="collapse" aria-labelledby="headingEntradas"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Entradas:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Lançamento
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consulta
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Importar <br>
+                                    Lançamento Caixa
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseSaídas"
+                            aria-expanded="false" aria-controls="collapseSaídas">
+                            Saídas <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Lançamento"},
-                            {"link": "", "texto": "Consulta"}
-                            ]'>
-                            Transferências
+                        <div id="collapseSaídas" class="collapse" aria-labelledby="headingSaídas"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Saídas:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Lançamento
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consulta
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseTransferencias" aria-expanded="false"
+                            aria-controls="collapseTransferencias">
+                            Transferências <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseTransferencias" class="collapse" aria-labelledby="headingTransferencias"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Transferências:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Lançamento
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consulta
+                                </a>
+                            </div>
+                        </div>
+
                         <a class="collapse-item" href="#">
                             Central de Custo
                         </a>
+
                         <a class="collapse-item" href="#">
                             Grupos de C. Correntes
                         </a>
+
                         <a class="collapse-item" href="#">
                             Contas Correntes
                         </a>
+
                         <a class="collapse-item" href="#">
                             Contas Correntes
                         </a>
+
                         <a class="collapse-item" href="#">
                             Grupo de Despesas
                         </a>
+
                         <a class="collapse-item" href="#">
                             Despesas
                         </a>
+
                         <a class="collapse-item" href="#">
                             Grupo de Receitas
                         </a>
+
                         <a class="collapse-item" href="#">
                             Receitas
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Importar OFX"},
-                            {"link": "", "texto": "Consulta Transações Pendentes"}
-                            ]'>
-                            OFX
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseOFX"
+                            aria-expanded="false" aria-controls="collapseOFX">
+                            OFX <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseOFX" class="collapse" aria-labelledby="headingOFX"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">OFX:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Importar OFX
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Consultar <br>
+                                    Pendentes
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -433,69 +915,133 @@
                 <div id="collapse4" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Contas:</h6>
+
                         <a class="collapse-item" href="#">
                             Contas a Pagar
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Cadastro"},
-                            {"link": "", "texto": "Negociar"}
-                            ]'>
-                            Contas a Receber
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseContasReceber" aria-expanded="false"
+                            aria-controls="collapseContasReceber">
+                            Contas a Receber <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseContasReceber" class="collapse" aria-labelledby="headingContasReceber"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Contas a Receber:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Cadastros
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Negociar
+                                </a>
+                            </div>
+                        </div>
+
                         <a class="collapse-item" href="#">
                             Contas Pagas
                         </a>
+
                         <a class="collapse-item" href="#">
                             Contas Recebidas
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Contas a Pagar"},
-                            {"link": "", "texto": "Contas a Receber"}
-                            ]'>
-                            Contas Canceladas
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseContasCanceladas" aria-expanded="false"
+                            aria-controls="collapseContasCanceladas">
+                            Contas Canceladas <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseContasCanceladas" class="collapse" aria-labelledby="headingContasCanceladas"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Contas Canceladas:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Contas a Pagar
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Contas a Receber
+                                </a>
+                            </div>
+                        </div>
+
                         <a class="collapse-item" href="#">
                             Adm. de Cartão
                         </a>
+
                         <a class="collapse-item" href="#">
                             Sincronização de Cartão
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Itaú", "niveis": [
-                                {"link": "", "texto": "Opção 1"},
-                                {"link": "", "texto": "Opção 2"}
-                            ]},
-                            {"link": "", "texto": "Banco do Nordeste", "niveis": [
-                                {"link": "", "texto": "Opção 1"},
-                                {"link": "", "texto": "Opção 2"}
-                            ]}
-                            ]'>
-                            Boletos
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseBoletos"
+                            aria-expanded="false" aria-controls="collapseBoletos">
+                            Boletos <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Itaú", "niveis": [
-                                {"link": "", "texto": "Opção 1"},
-                                {"link": "", "texto": "Opção 2"}
-                            ]},
-                            {"link": "", "texto": "Banco do Nordeste", "niveis": [
-                                {"link": "", "texto": "Opção 1"},
-                                {"link": "", "texto": "Opção 2"}
-                            ]}
-                            ]'>
-                            Arquivos de Remessa
+                        <div id="collapseBoletos" class="collapse" aria-labelledby="headingBoletos"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Boletos:</h6>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Opção 1"},
+                                    {"link": "", "texto": "Opção 2"}
+                                ]'>
+                                    Itaú
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Opção 1"},
+                                    {"link": "", "texto": "Opção 2"}
+                                ]'>
+                                    Banco do Nordeste
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseArquivosRemessa" aria-expanded="false"
+                            aria-controls="collapseArquivosRemessa">
+                            Arquivos de Remessa <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Itaú", "niveis": [
-                                {"link": "", "texto": "Opção 1"},
-                                {"link": "", "texto": "Opção 2"}
-                            ]},
-                            {"link": "", "texto": "Banco do Nordeste", "niveis": [
-                                {"link": "", "texto": "Opção 1"},
-                                {"link": "", "texto": "Opção 2"}
-                            ]}
-                            ]'>
-                            Arquviso de Retorno
+                        <div id="collapseArquivosRemessa" class="collapse" aria-labelledby="headingArquivosRemessa"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Arquivos de Remessa:</h6>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Opção 1"},
+                                    {"link": "", "texto": "Opção 2"}
+                                ]'>
+                                    Itaú
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Opção 1"},
+                                    {"link": "", "texto": "Opção 2"}
+                                ]'>
+                                    Banco do Nordeste
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseArquivosRetorno" aria-expanded="false"
+                            aria-controls="collapseArquivosRetorno">
+                            Arquivos de Retorno <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseArquivosRetorno" class="collapse" aria-labelledby="headingArquivosRetorno"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Arquivos de Retorno:</h6>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Opção 1"},
+                                    {"link": "", "texto": "Opção 2"}
+                                ]'>
+                                    Itaú
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#" data-opcoes='[
+                                    {"link": "", "texto": "Opção 1"},
+                                    {"link": "", "texto": "Opção 2"}
+                                ]'>
+                                    Banco do Nordeste
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -517,50 +1063,87 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Relatórios:</h6>
+
                         <a class="collapse-item" href="#">
                             Clientes
                         </a>
+
                         <a class="collapse-item" href="#">
                             Compras
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Contas a Pagar"},
-                            {"link": "", "texto": "Contas a Receber"},
-                            {"link": "", "texto": "Contas Pagas"},
-                            {"link": "", "texto": "Contas Recebidas"}
-                            ]'>
-                            Contas
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseContas"
+                            aria-expanded="false" aria-controls="collapseContas">
+                            Contas <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseContas" class="collapse" aria-labelledby="headingContas"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Contas:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Contas a Pagar
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Contas a Receber
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Contas Pagas
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Contas Recebidas
+                                </a>
+                            </div>
+                        </div>
+
                         <a class="collapse-item" href="#">
                             Financeiro
                         </a>
+
                         <a class="collapse-item" href="#">
                             Fornecedores
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Entrada"},
-                            {"link": "", "texto": "Saída"}
-                            ]'>
-                            Notas
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse" data-target="#collapseNotas"
+                            aria-expanded="false" aria-controls="collapseNotas">
+                            Notas <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseNotas" class="collapse" aria-labelledby="headingNotas"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Notas:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Entrada
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Saída
+                                </a>
+                            </div>
+                        </div>
+
                         <a class="collapse-item" href="#">
                             Indústria
                         </a>
+
                         <a class="collapse-item" href="#">
                             Ordem de Serviço
                         </a>
+
                         <a class="collapse-item" href="#">
                             Pedidos
                         </a>
+
                         <a class="collapse-item" href="#">
                             Produtos
                         </a>
+
                         <a class="collapse-item" href="#">
                             Vendas
                         </a>
+
                         <a class="collapse-item" href="#">
                             Vendedores
                         </a>
+
                         <a class="collapse-item" href="#">
                             Personalizados
                         </a>
@@ -588,36 +1171,70 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Utilitários:</h6>
+
                         <a class="collapse-item" href="#">
                             Arquivos
                         </a>
+
                         <a class="collapse-item" href="#">
                             Forçar Sinc. do PDV
                         </a>
+
                         <a class="collapse-item" href="#">
                             Portal Utilitários
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Validar NCM"}
-                            ]'>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseValidaEmisao" aria-expanded="false"
+                            aria-controls="collapseValidaEmisao">
                             Validar Cadastro para <br>
-                            Emissão de Documentos
+                            Emissão de Docs <i class="fas fa-chevron-right arrow"></i>
                         </a>
-                        <a class="collapse-item" href="#" data-opcoes='[
-                            {"link": "", "texto": "Alterar ICMS Venda"},
-                            {"link": "", "texto": "Alterar Código NCM"},
-                            {"link": "", "texto": "Recalcular Custos de Produtos"}
-                            ]'>
-                            Alteração em Massa
+                        <div id="collapseValidaEmisao" class="collapse" aria-labelledby="headingValidaEmisao"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Validar Cadastro para <br>
+                                    Emissão de Docs:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Validar NCM
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="collapse-item sub1" href="#" data-toggle="collapse"
+                            data-target="#collapseAlteracaoEmMassa" aria-expanded="false"
+                            aria-controls="collapseAlteracaoEmMassa">
+                            Alteração em Massa <i class="fas fa-chevron-right arrow"></i>
                         </a>
+                        <div id="collapseAlteracaoEmMassa" class="collapse" aria-labelledby="headingAlteracaoEmMassa"
+                            data-parent="#collapsePages">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Alteração em Massa:</h6>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Alterar ICMS <br>
+                                    Venda
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Alterar Código <br>
+                                    NCM
+                                </a>
+                                <a class="collapse-item collapse-modal" href="#">
+                                    Recalcular Custos <br>
+                                    de Produtos
+                                </a>
+                            </div>
+                        </div>
+
                         <a class="collapse-item" href="#">
                             Redimento/Equivalencia <br>
                             Unitaria Igual a Um
                         </a>
+
                         <a class="collapse-item" href="#">
                             Alterar Senha <br>
                             Usuário Suporte
                         </a>
+
                         <a class="collapse-item" href="#">
                             Ajustar Casas <br>
                             Decimais Estoque
@@ -700,8 +1317,8 @@
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small"
+                                placeholder="Pesquisar por..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -870,6 +1487,10 @@
                                 <a class="dropdown-item" href="#">
                                     <!-- <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> -->
                                     Central de Relatórios
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <!-- <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> -->
+                                    Alterar Filial
                                 </a>
                                 <a class="dropdown-item" href="#">
                                     <!-- <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> -->
@@ -1482,6 +2103,27 @@
         </div>
     </div>
 
+    <!-- SideBar Opcoes -->
+    <!-- <div class="modal fade" id="modalBar" tabindex="-1" role="dialog" aria-labelledby="modalTitleBar"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleBar"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="list-group" id="ulModalBar">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1499,70 +2141,53 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
 
-    <script src="vendor/sweetalert/sweetalert2.min.js"></script>
-
     <script>
-        $(function () {
-            $('[data-toggle="popover"]').popover()
+        $(document).ready(function () {
+            $('.collapse-item.sub1').on('click', function () {
+                let $this = $(this);
+                let $arrow = $this.find('.arrow');
+                let $sub = $(this).next('.collapse')
 
-            $('.collapse-item').on('click', function () {
-                let opcoes = $(this).data('opcoes');
 
-                if (opcoes != null) {
+                if ($arrow.hasClass('rotate')) {
+                    $arrow.removeClass('rotate');
 
-                    // let htmlContent = `
-                    //     <h5>Opções:</h5>
-                    //     <div class="list-group">
-                    // `;
-
-                    // opcoes.forEach((opcao, index) => {
-                    //     if (opcao.niveis && Array.isArray(opcao.niveis)) {
-
-                    //         htmlContent += `
-                    //             <div class="dropdown mb-2">
-                    //                 <a class="btn ${index % 2 === 0 ? 'btn-secondary' : 'btn-primary'} dropdown-toggle btn-lg btn-block" 
-                    //                 href="#" role="button"
-                    //                 data-toggle="dropdown" 
-                    //                 aria-expanded="false" 
-                    //                 style="width: 100%;">
-                    //                     ${opcao.texto}
-                    //                 </a>
-                    //                 <div class="dropdown-menu" style="width: 100%;"> <!-- Ajusta a largura do dropdown -->
-                    //         `;
-
-                    //         opcao.niveis.forEach((nivel, index) => {
-                    //             htmlContent += `
-                    //                 <a class="dropdown-item" href="${nivel.link}">${nivel.texto}</a>
-                    //                 `;
-                    //             if (index < opcao.niveis.length - 1) {
-                    //                 htmlContent += `<div class="dropdown-divider"></div>`;
-                    //             }
-                    //         });
-
-                    //         htmlContent += `
-                    //                 </div>
-                    //             </div>
-                    //         `;
-                    //     } else {
-                    //         htmlContent += `<button type="button" class="btn ${index % 2 === 0 ? 'btn-secondary' : 'btn-primary'} btn-lg btn-block mb-2">${opcao.texto}</button>`;
-                    //     }
-                    // });
-
-                    // htmlContent += '</div>';
-
-                    // Swal.fire({
-                    //     title: $(this).text(),
-                    //     showCloseButton: true,
-                    //     showConfirmButton: false,
-                    //     html: htmlContent,
-                    //     icon: 'info',
-                    // });
+                    $('.collapse-item').each(function () {
+                        if ($(this).attr('aria-expanded') === 'true' && $(this).is($this) === false) {
+                            $(this).next('.collapse').collapse('hide');
+                        }
+                    });
                 } else {
+                    $arrow.addClass('rotate');
+                    $telaW = $(window).width();
 
+                    if ($('body').hasClass('sidebar-toggled') || $telaW <= 768) {
+                        $('html, body').animate({
+                            scrollTop: $sub.offset().top
+                        }, 500);
+                    }
+
+                    $('.collapse-item').each(function () {
+                        if ($(this).attr('aria-expanded') === 'true' && $(this).is($this) === false) {
+                            $(this).next('.collapse').collapse('hide');
+                            $(this).find('.arrow').removeClass('rotate');
+                        }
+                    });
                 }
             });
 
-        })
+            // $('.collapse-modal').on('click', function () {
+            //     let opcoes = $(this).data('opcoes');
+            //     $('#modalTitleBar').text(`${$(this).text()}:`);
+
+            //     $('#ulModalBar').empty();
+            //     opcoes.forEach(element => {
+            //         $('#ulModalBar').append(`<li class="list-group-item"><a href="${element.link}">${element.texto}</a></li>`);
+            //     });
+
+            //     $('#modalBar').modal('show');
+            // });
+        });
     </script>
 </body>
 
