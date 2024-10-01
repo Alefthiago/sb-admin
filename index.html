@@ -1314,11 +1314,27 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
+                    <!-- <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small"
                                 placeholder="Pesquisar por..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form> -->
+
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input list="options-desktop" id="search-input-desktop" class="form-control"
+                                placeholder="Digite sua busca">
+                            <datalist id="options-desktop">
+                                <!-- Adicione mais opções conforme necessário -->
+                            </datalist>
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -1341,9 +1357,15 @@
                                 aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
+                                        <input list="search-options" type="text"
+                                            class="form-control bg-light border-0 small" placeholder="Search for..."
+                                            aria-label="Search" aria-describedby="basic-addon2">
+                                        <datalist id="search-options">
+                                            <option value="Opção 1">
+                                            <option value="Opção 2">
+                                            <option value="Opção 3">
+                                                <!-- Adicione mais opções conforme necessário -->
+                                        </datalist>
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -1352,6 +1374,7 @@
                                     </div>
                                 </form>
                             </div>
+
                         </li>
 
                         <!-- Nav Item - Alerts -->
@@ -2176,6 +2199,43 @@
                 }
             });
 
+            var options = [
+                { "descricao": "Cadastros -> Cliente -> Profissões", "link": "https://bmweb.azurewebsites.net/Profissoes" },
+                { "descricao": "Cadastros -> Fornecedores -> Compradores", "link": "https://bmweb.azurewebsites.net/Fornecedores/Compradores" },
+                { "descricao": "Cadastros -> Produtos -> Cadastro", "link": "https://bmweb.azurewebsites.net/Produtos" },
+                { "descricao": "Cadastros -> Produtos -> Complementos", "link": "https://bmweb.azurewebsites.net/Complementos" },
+                { "descricao": "Cadastros -> Produtos -> Etapas de Produção", "link": "https://bmweb.azurewebsites.net/EtapasProducoes" },
+                { "descricao": "Cadastros -> Produtos -> Famílias", "link": "https://bmweb.azurewebsites.net/Familias" },
+                { "descricao": "Cadastros -> Produtos -> Grupos", "link": "https://bmweb.azurewebsites.net/Grupos" },
+                { "descricao": "Cadastros -> Produtos -> Marcas", "link": "https://bmweb.azurewebsites.net/Marcas" },
+                { "descricao": "Cadastros -> Produtos -> Perfis Tributários", "link": "https://bmweb.azurewebsites.net/PerfisTributarios" },
+                { "descricao": "Cadastros -> Produtos -> Seções", "link": "https://bmweb.azurewebsites.net/Secoes" },
+                { "descricao": "Cadastros -> Produtos -> Setores de Produção", "link": "https://bmweb.azurewebsites.net/SetoresProducoes" },
+                { "descricao": "Cadastros -> Produtos -> Unidades de Medida", "link": "https://bmweb.azurewebsites.net/Unidades" },
+                { "descricao": "Cadastros -> Promoções -> Ativas", "link": "https://bmweb.azurewebsites.net/Promocoes?Promocaotipo=ativas" },
+                { "descricao": "Cadastros -> Promoções -> Cadastrar", "link": "https://bmweb.azurewebsites.net/Promocoes/Create" },
+                { "descricao": "Cadastros -> Promoções -> Canceladas", "link": "https://bmweb.azurewebsites.net/Promocoes?Promocaotipo=canceladas" }
+            ];
+
+            $('#search-input-desktop').on('input', function () {
+                var inputValue = $(this).val();
+                $('#options-desktop').empty(); // Limpa as opções anteriores
+
+                options.forEach(function (option) {
+                    if (option.descricao.toLowerCase().includes(inputValue.toLowerCase())) {
+                        $('#options-desktop').append('<option value="' + option.descricao + '" data-url="' + option.link + '"></option>');
+                    }
+                });
+
+                $('#options-desktop option').each(function () {
+                    if ($(this).val() === inputValue) {
+                        var url = $(this).data('url');
+                        if (url) {
+                            window.location.href = url;
+                        }
+                    }
+                });
+            });
             // $('.collapse-modal').on('click', function () {
             //     let opcoes = $(this).data('opcoes');
             //     $('#modalTitleBar').text(`${$(this).text()}:`);
